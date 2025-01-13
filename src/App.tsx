@@ -1,16 +1,16 @@
-import './App.css'
-import lemonBlob from './assets/images/lemon_blob.svg'
-import babyBlueBlob from './assets/images/baby_blue_blob.svg'
-import StartScreen from './components/StartScreen'
+import "./assets/css/output.css";
+import lemonBlob from "./assets/images/lemon_blob.svg";
+import babyBlueBlob from "./assets/images/baby_blue_blob.svg";
+import StartScreen from "./components/StartScreen";
 
 function App() {
   return (
     <main id="main">
-      <img src={lemonBlob} alt="" className="blob yellow-blob" />
-      <img src={babyBlueBlob} alt="" className="blob blue-blob" />
+      <img src={lemonBlob} alt="" className="yellow-blob" />
+      <img src={babyBlueBlob} alt="" className="blue-blob" />
       <StartScreen />
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
