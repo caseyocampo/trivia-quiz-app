@@ -1,4 +1,10 @@
-export default function Buttons({ handleCheckAnswers, handleReturnToStartPage, handleNewQuestions }) {
+interface ButtonsProps {
+  handleCheckAnswers: () => void;
+  handleReturnToStartPage: () => void;
+  handleNewQuestions: () => void;
+}
+
+export default function Buttons({ handleCheckAnswers, handleReturnToStartPage, handleNewQuestions }: ButtonsProps) {
 	return (
 	  <div className="button-container">
 		<div className="top-button-container">
