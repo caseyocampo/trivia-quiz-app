@@ -1,4 +1,8 @@
-export default function Homepage({ handleClick }) {
+interface HomepageProps {
+  handleClick: () => void;
+}
+
+export default function Homepage({ handleClick }: HomepageProps) {
 	return (
 	  <div>
 		<div className="start-page">
